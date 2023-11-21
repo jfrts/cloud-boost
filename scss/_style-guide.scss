@@ -1,0 +1,105 @@
+// Grid
+$grid-size-desktop: 121.6rem;
+
+// Fonts
+$font-base: 'Inter', sans-serif;
+$font-title: 'Space Grotesk', sans-serif;
+
+// Primary Colors
+$purple-1: #653DF5;
+$purple-2: #4E32B5;
+$purple-3: #2C1B6A;
+
+// Grayscale
+$gray-900: #0A0B0D;
+$gray-800: #393B42;
+$gray-700: #5C5F69;
+$gray-600: #787C87;
+$gray-500: #979BA6;
+$gray-400: #ABAFBA;
+$gray-300: #C0C3CC;
+$gray-200: #DFE1E8;
+$gray-100: #F2F4F9;
+$gray-050: #f7f7f7;
+
+// Text
+* {
+    font-family: $font-base;
+}
+
+// Titles
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $font-title;
+    letter-spacing: -0.04rem;
+    line-height: 120%;
+
+    &.bold {
+        font-weight: 700;
+    }
+
+    &.semi-bold {
+        font-weight: 600;
+    }
+}
+
+h1 {
+    font-size: 5.6rem;
+}
+
+h2 {
+    font-size: 4.8rem;
+}
+
+h3 {
+    font-size: 4rem;
+}
+
+h4 {
+    font-size: 3.2rem;
+}
+
+h5 {
+    font-size: 2.8rem;
+}
+
+// Body Text
+.heading-1,
+.heading-2,
+.text-1,
+.text-2,
+.text-3 {
+    font-family: $font-base;
+    line-height: 150%;
+
+    &.bold {
+        font-weight: 700;
+    }
+
+    &.semi-bold {
+        font-weight: 600;
+    }
+}
+
+.heading-1 {
+    font-size: 2.2rem;
+}
+
+.heading-2 {
+    font-size: 2rem;
+}
+
+.text-1 {
+    font-size: 1.8rem;
+}
+
+.text-2 {
+    font-size: 1.6rem;
+}
+
+.text-3 {
+    font-size: 1.4rem
+}
