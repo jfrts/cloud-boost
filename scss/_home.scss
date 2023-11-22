@@ -164,11 +164,19 @@ main {
         padding: 8rem 0;
     }
 
+    @include responsive("tablet") {
+        padding: 5rem 0;
+    }
+
     .resources-header {
         align-items: center;
         display: flex;
         justify-content: space-between;
         margin-bottom: 8rem;
+        
+        @include responsive("tablet") {
+            margin-bottom: 5rem;
+        }
 
         @include responsive("tablet") {
             flex-direction: column;
@@ -197,9 +205,10 @@ main {
         gap: 7.2rem;
         grid-template-columns: repeat(4, 1fr);
         padding-bottom: 9.6rem;
-
+        
         @include responsive("laptop") {
             gap: 5.6rem;
+            padding-bottom: 5rem;
         }
 
         @include responsive("tablet") {
