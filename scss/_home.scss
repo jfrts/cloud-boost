@@ -1,0 +1,132 @@
+header {
+    margin-top: 1.6rem;
+    position: sticky;
+    top: 1.6rem;
+    z-index: 999;
+
+    .content-header {
+        align-items: center;
+        backdrop-filter: blur(8px);
+        background-color: rgba(0, 0, 0, 0.03);
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 999rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.8rem 1rem 0.8rem 2rem;
+
+        .actions {
+            display: flex;
+            gap: 1.6rem;
+
+            a {
+                align-items: center;
+                display: flex;
+                gap: 0.8rem;
+
+                img {
+                    max-width: 2.4rem;
+                }
+
+                span {
+                    color: $gray-900;
+                    font-size: 1.6rem;
+                    transition: all 250ms ease;
+
+                    &:hover {
+                        color: $purple-1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    padding-top: 8rem;
+
+    .hero-content {
+        align-items: center;
+        border-bottom: 1px solid $gray-200;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 9.7rem;
+
+        .texts {
+            flex: 1;
+            max-width: 60rem;
+
+            h1 {
+                margin-bottom: 1.6rem;
+            }
+
+            span {
+                color: $purple-1;
+                font-family: $font-title;
+                text-decoration: underline;
+            }
+
+            & > p {
+                color: $gray-600;
+                margin-bottom: 3.2rem;
+                max-width: 49.1rem;
+            }
+            
+            ul {
+                align-items: center;
+                display: flex;
+                gap: 2.4rem;
+                margin: 4.8rem 0;
+            }
+        }
+    }
+}
+
+.s-resources {
+    padding: 11.2rem 0;
+
+    .resources-header {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8rem;
+
+        h3 {
+            max-width: 66.1rem;
+            letter-spacing: -0.09rem;
+        }
+    }
+
+    .items-container {
+        border-bottom: 1px solid $gray-200;
+        display: grid;
+        gap: 7.2rem;
+        grid-template-columns: repeat(4, 1fr);
+        padding-bottom: 9.6rem;
+    }
+}
+
+.s-marketing {
+    padding-bottom: 9.6rem;
+    
+    .container {
+        padding: 8.1rem;
+        background: url("../img/bg-box.svg") no-repeat center center;
+
+        .texts {
+            margin: 0 auto;
+            max-width: 78.6rem;
+            text-align: center;
+            
+            h1 {
+                color: $gray-050;
+                margin-bottom: 0.8rem;
+            }
+
+            p {
+                color: $gray-200;
+                margin: 0 auto 3.2rem auto;
+                max-width: 50rem;
+            }
+        }
+    }
+}
