@@ -230,6 +230,10 @@ main {
             padding: 6.4rem;
         }
 
+        @include responsive("mobile") {
+            padding: 2.4rem;
+        }
+
         .texts {
             margin: 0 auto;
             max-width: 78.6rem;
@@ -238,6 +242,11 @@ main {
             h1 {
                 color: $gray-050;
                 margin-bottom: 0.8rem;
+
+                @include responsive("mobile") {
+                    font-size: 3.6rem;
+                }
+        
             }
 
             p {
