@@ -4,6 +4,12 @@ header {
     top: 1.6rem;
     z-index: 999;
 
+    .logo {
+        @include responsive("mobile") {
+            max-width: 13.5rem;
+        }
+    }
+
     .content-header {
         align-items: center;
         backdrop-filter: blur(8px);
@@ -14,9 +20,17 @@ header {
         justify-content: space-between;
         padding: 0.8rem 1rem 0.8rem 2rem;
 
+        @include responsive("mobile") {
+            padding: 2rem 2.5rem;
+        }
+
         .actions {
             display: flex;
             gap: 1.6rem;
+
+            @include responsive("mobile") {
+                display: none;
+            }
 
             a {
                 align-items: center;
@@ -38,11 +52,23 @@ header {
                 }
             }
         }
+
+        .icon-menu-mobile {
+            display: none;
+
+            @include responsive("mobile") {
+                display: block;
+            }
+        }
     }
 }
 
 main {
     padding-top: 8rem;
+
+    @include responsive("laptop") {
+        padding-top: 5rem;
+    }
 
     .hero-content {
         align-items: center;
@@ -51,9 +77,28 @@ main {
         justify-content: space-between;
         padding-bottom: 9.7rem;
 
+        @include responsive("laptop") {
+            gap: 3.2rem;
+            padding-bottom: 5rem;
+        }
+
+        @include responsive("tablet") {
+            flex-direction: column;
+            gap: 4rem;
+        }
+
         .texts {
             flex: 1;
             max-width: 60rem;
+
+            @include responsive("laptop") {
+                max-width: 55rem;
+            }
+
+            @include responsive("tablet") {
+                max-width: 100%;
+                text-align: center;
+            }
 
             h1 {
                 margin-bottom: 1.6rem;
@@ -65,17 +110,48 @@ main {
                 text-decoration: underline;
             }
 
-            & > p {
+            &>p {
                 color: $gray-600;
                 margin-bottom: 3.2rem;
                 max-width: 49.1rem;
+
+                @include responsive("laptop") {
+                    margin: 0 auto;
+                    max-width: 55rem;
+                    margin-bottom: 3.2rem;
+                }
             }
-            
+
             ul {
                 align-items: center;
                 display: flex;
                 gap: 2.4rem;
                 margin: 4.8rem 0;
+
+                @include responsive("tablet") {
+                    justify-content: center;
+                }
+            }
+        }
+
+        .hero-image, .hero-image-mobile {
+            @include responsive("laptop") {
+                max-width: 53rem;
+            }
+        }
+
+        .hero-image {
+            @include responsive("mobile") {
+                display: none;
+            }
+        }
+
+        .hero-image-mobile {
+            display: none;
+            width: 100%;
+
+            @include responsive("mobile") {
+                display: block;
             }
         }
     }
@@ -84,15 +160,34 @@ main {
 .s-resources {
     padding: 11.2rem 0;
 
+    @include responsive("laptop") {
+        padding: 8rem 0;
+    }
+
     .resources-header {
         align-items: center;
         display: flex;
         justify-content: space-between;
         margin-bottom: 8rem;
 
+        @include responsive("tablet") {
+            flex-direction: column;
+            gap: 3.2rem;
+            margin-bottom: 6.4rem;
+            text-align: center;
+        }
+
         h3 {
-            max-width: 66.1rem;
             letter-spacing: -0.09rem;
+            max-width: 66.1rem;
+
+            @include responsive("laptop") {
+                max-width: 52rem;
+            }
+
+            @include responsive("tablet") {
+                max-width: 85%;
+            }
         }
     }
 
@@ -102,21 +197,44 @@ main {
         gap: 7.2rem;
         grid-template-columns: repeat(4, 1fr);
         padding-bottom: 9.6rem;
+
+        @include responsive("laptop") {
+            gap: 5.6rem;
+        }
+
+        @include responsive("tablet") {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include responsive("mobile") {
+            gap: 6.4rem;
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
     }
 }
 
 .s-marketing {
     padding-bottom: 9.6rem;
     
+    @include responsive("tablet") {
+        padding: 0 1.6rem 6.6rem 1.6rem;
+    }
+
     .container {
         padding: 8.1rem;
         background: url("../img/bg-box.svg") no-repeat center center;
+        margin: 0 auto;
+
+        @include responsive("tablet") {
+            padding: 6.4rem;
+        }
 
         .texts {
             margin: 0 auto;
             max-width: 78.6rem;
             text-align: center;
-            
+
             h1 {
                 color: $gray-050;
                 margin-bottom: 0.8rem;

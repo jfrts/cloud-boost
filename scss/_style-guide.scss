@@ -52,22 +52,83 @@ h5 {
 
 h1 {
     font-size: 5.6rem;
+
+    @include responsive("laptop") {
+        font-size: 5.2rem;
+    }
+
+    @include responsive("tablet") {
+        font-size: 4.6rem;
+    }
+
+    @include responsive("mobile") {
+        font-size: 4rem;
+    }
+
 }
 
 h2 {
     font-size: 4.8rem;
+
+    @include responsive("laptop") {
+        font-size: 4.4rem;
+    }
+
+    @include responsive("tablet") {
+        font-size: 3.8rem;
+    }
+
+    @include responsive("mobile") {
+        font-size: 3.2rem;
+    }
 }
 
 h3 {
     font-size: 4rem;
+
+    @include responsive("laptop") {
+        font-size: 3.6rem;
+    }
+
+    @include responsive("tablet") {
+        font-size: 3.2rem;
+    }
+
+    @include responsive("mobile") {
+        font-size: 2.8rem;
+    }
 }
 
 h4 {
     font-size: 3.2rem;
+
+    @include responsive("laptop") {
+        font-size: 2.8rem;
+    }
+
+    @include responsive("tablet") {
+        font-size: 2.4rem;
+    }
+
+    @include responsive("mobile") {
+        font-size: 2rem;
+    }
 }
 
 h5 {
     font-size: 2.8rem;
+
+    @include responsive("laptop") {
+        font-size: 2.4rem;
+    }
+
+    @include responsive("tablet") {
+        font-size: 2.1rem;
+    }
+
+    @include responsive("mobile") {
+        font-size: 1.8rem;
+    }
 }
 
 // Body Text
@@ -90,14 +151,42 @@ h5 {
 
 .heading-1 {
     font-size: 2.2rem;
+
+    @include responsive("laptop") {
+        font-size: 2rem;
+    }
+
+    @include responsive("tablet") {
+        font-size: 1.8rem;
+    }
+
+    @include responsive("mobile") {
+        font-size: 1.6rem;
+    }
 }
 
 .heading-2 {
     font-size: 2rem;
+
+    @include responsive("laptop") {
+        font-size: 2rem;
+    }
+
+    @include responsive("tablet") {
+        font-size: 1.8rem;
+    }
+
+    @include responsive("mobile") {
+        font-size: 1.6rem;
+    }
 }
 
 .text-1 {
     font-size: 1.8rem;
+
+    @include responsive("mobile") {
+        font-size: 1.6rem;
+    }
 }
 
 .text-2 {

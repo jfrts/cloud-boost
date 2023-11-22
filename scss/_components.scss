@@ -7,12 +7,24 @@
     line-height: 150%;
     transition: all 250ms ease;
 
+    @include responsive("tablet") {
+        font-size: 1.6rem;                    
+    }
+
     &.md {
         padding: 1.6rem 2.4rem;
+
+        @include responsive("tablet") {
+            font-size: 1.4rem 2rem;                    
+        }
     }
 
     &.lg {
         padding: 2rem 6.4rem;
+
+        @include responsive("tablet") {
+            font-size: 1.8rem 5.6rem;                    
+        }
     }
 
     &:hover {
@@ -31,6 +43,14 @@
     padding: 0.4rem 0.4rem 0.4rem 2.4rem;
     width: 100%;
 
+    @include responsive("tablet") {
+        margin: 0 auto;
+    }
+
+    @include responsive("mobile") {
+        padding: 1.2rem 2rem;
+    }
+
     input {
         all: unset;
         background-color: transparent;
@@ -38,6 +58,7 @@
         color: $gray-700;
         flex: 1;
         font-size: 1.6rem;
+        text-align: start;
     }
 }
 
@@ -55,6 +76,14 @@
 
     p {
         color: $gray-600;
+
+        @include responsive("mobile") {
+            max-width: 90%;
+        }
+    }
+
+    @include responsive("mobile") {
+        align-items: center;
     }
 }
 
@@ -62,6 +91,10 @@
     align-items: center;
     display: flex;
     gap: 0.8rem;
+
+    @include responsive("tablet") {
+        justify-content: center;               
+    }
 
     & > div {
         align-items: center;
